@@ -25,6 +25,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DDDApplication.Infra.Data",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DDDApplication.Application", "DDDApplication.Application\DDDApplication.Application.csproj", "{D5DA2408-E5B1-4CBD-83DF-7A7E64D7A41F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DDDApplication.CrossCutting.InversionOfControl", "DDDApplication.CrossCutting.InversionOfControl\DDDApplication.CrossCutting.InversionOfControl.csproj", "{A54A8199-A8B8-4D59-B4D5-E6F8B7E7908D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -47,6 +49,10 @@ Global
 		{D5DA2408-E5B1-4CBD-83DF-7A7E64D7A41F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D5DA2408-E5B1-4CBD-83DF-7A7E64D7A41F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D5DA2408-E5B1-4CBD-83DF-7A7E64D7A41F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A54A8199-A8B8-4D59-B4D5-E6F8B7E7908D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A54A8199-A8B8-4D59-B4D5-E6F8B7E7908D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A54A8199-A8B8-4D59-B4D5-E6F8B7E7908D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A54A8199-A8B8-4D59-B4D5-E6F8B7E7908D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -58,6 +64,7 @@ Global
 		{6EC37B15-D82D-4DF4-B822-3BCF79A92FCE} = {97E8BF16-6715-47DC-A2CA-78CF059D5D6F}
 		{BE7E475F-67FF-442F-9E77-83F702908B9B} = {F71F41A9-1F8B-4611-96AF-DF9008405ED8}
 		{D5DA2408-E5B1-4CBD-83DF-7A7E64D7A41F} = {BD81392D-9C9C-4257-BC16-6FF331B6B6C8}
+		{A54A8199-A8B8-4D59-B4D5-E6F8B7E7908D} = {1D4986BE-B212-4469-9B05-412607A5F8E7}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {3CE7326F-C351-4730-B489-EF67728C99BE}
