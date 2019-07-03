@@ -14,9 +14,10 @@ namespace DDDApplication.MVC.ViewModels
         public string Description { get; set; }
 
         [DataType(DataType.Currency)]
-        [Range(typeof(decimal), "0", "999999999999")]
+        [Range(typeof(decimal), "0", "999999999999,99")]
         [Required(ErrorMessage = "Enter the value correctly.")]
-        public decimal Valeu { get; set; }
+        //[DisplayFormat(DataFormatString = "{0:C}", ApplyFormatInEditMode = true)]
+        public decimal Value { get; set; }
 
         [DisplayName("Available?")]
         public bool Available { get; set; }

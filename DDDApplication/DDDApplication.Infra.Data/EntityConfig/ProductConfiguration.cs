@@ -13,7 +13,7 @@ namespace DDDApplication.Infra.Data.EntityConfig
                 .IsRequired()
                 .HasMaxLength(255);
 
-            Property(p => p.Valeu)
+            Property(p => p.Value)
                 .IsRequired();
 
             //Relacionamento onde diz que UM Cliente tem VÁRIOS Produtos.

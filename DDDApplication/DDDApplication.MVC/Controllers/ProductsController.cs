@@ -83,6 +83,7 @@ namespace DDDApplication.MVC.Controllers
                 return RedirectToAction("Index");
             }
 
+            ViewBag.CustomerId = new SelectList(_customerAppService.GetAll(), "Id", "Name", productViewModel.Id);
             return View(productViewModel);
         }
 

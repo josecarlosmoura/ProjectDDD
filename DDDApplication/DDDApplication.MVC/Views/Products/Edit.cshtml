@@ -2,6 +2,10 @@
 
 @{
     ViewBag.Title = "Edit";
+
+    @*IFormatProvider formatProvider =
+        new System.Globalization.CultureInfo("pt-BR");
+    <span class="currency">@Model.Value.ToString("C", formatProvider)</span>*@
 }
 
 <h2>Edit</h2>
@@ -10,7 +14,7 @@
 @using (Html.BeginForm())
 {
     @Html.AntiForgeryToken()
-    
+
     <div class="form-horizontal">
         <h4>ProductViewModel</h4>
         <hr />
@@ -26,10 +30,10 @@
         </div>
 
         <div class="form-group">
-            @Html.LabelFor(model => model.Valeu, htmlAttributes: new { @class = "control-label col-md-2" })
+            @Html.LabelFor(model => model.Value, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
-                @Html.EditorFor(model => model.Valeu, new { htmlAttributes = new { @class = "form-control" } })
-                @Html.ValidationMessageFor(model => model.Valeu, "", new { @class = "text-danger" })
+                @Html.EditorFor(model => model.Value, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.Value, "", new { @class = "text-danger" })
             </div>
         </div>
 
