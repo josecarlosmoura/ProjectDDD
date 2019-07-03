@@ -4,8 +4,8 @@
     ViewBag.Title = "Edit";
 
     @*IFormatProvider formatProvider =
-        new System.Globalization.CultureInfo("pt-BR");
-    <span class="currency">@Model.Value.ToString("C", formatProvider)</span>*@
+            new System.Globalization.CultureInfo("pt-BR");
+        <span class="currency">@Model.Value.ToString("C", formatProvider)</span>*@
 }
 
 <h2>Edit</h2>
@@ -69,4 +69,5 @@
 
 @section Scripts {
     @Scripts.Render("~/bundles/jqueryval")
+    @Scripts.Render("~/bundles/validationsptbr")
 }

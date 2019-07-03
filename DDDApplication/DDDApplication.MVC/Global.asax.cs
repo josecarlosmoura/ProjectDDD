@@ -15,6 +15,11 @@ namespace DDDApplication.MVC
             BundleConfig.RegisterBundles(BundleTable.Bundles);
 
             AutoMapperConfig.Register();
+
+            ModelBinders.Binders.Add(
+                typeof(decimal), new DecimalModelBinder());
+            ModelBinders.Binders.Add(
+                typeof(decimal?), new DecimalModelBinder());
         }
     }
 }

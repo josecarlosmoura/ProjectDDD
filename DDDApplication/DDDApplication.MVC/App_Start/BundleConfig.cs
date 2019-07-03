@@ -24,6 +24,10 @@ namespace DDDApplication.MVC
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css",
                       "~/Content/site.css"));
+
+            // Validações no padrão brasileiro
+            bundles.Add(new ScriptBundle("~/bundles/validationsptbr").Include(
+                        "~/Scripts/jquery.validate.custom.pt-br*"));
         }
     }
 }
