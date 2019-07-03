@@ -36,4 +36,4 @@ Este projeto detém das seguintes camadas:
 * Domain
 * Infraestrutura
   - Data
-  - Cross Cutting (não implementada)
+  - Cross Cutting
