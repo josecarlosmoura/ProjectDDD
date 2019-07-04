@@ -2,11 +2,14 @@
 
 namespace DDDApplication.MVC
 {
-    public class BundleConfig
+    public static class BundleConfig
     {
         // Para obter mais informações sobre o agrupamento, visite https://go.microsoft.com/fwlink/?LinkId=301862
         public static void RegisterBundles(BundleCollection bundles)
         {
+            bundles.Add(new ScriptBundle("~/bundles/EventsOfButtons").Include(
+                        "~/Scripts/jquery.events.of.buttons.js"));
+
             bundles.Add(new ScriptBundle("~/bundles/jquery").Include(
                         "~/Scripts/jquery-{version}.js"));
 

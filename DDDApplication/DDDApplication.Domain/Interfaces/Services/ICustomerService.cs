@@ -6,5 +6,7 @@ namespace DDDApplication.Domain.Interfaces.Services
     public interface ICustomerService : IServiceBase<Customer>
     {
         IEnumerable<Customer> GetSpacialCustomer(IEnumerable<Customer> customers);
+
+        IEnumerable<Customer> FindCustomersByName(string fragmentName);
     }
 }

@@ -17,7 +17,12 @@ namespace DDDApplication.Application
         public IEnumerable<Customer> GetSpacialCustomer()
         {
             return _customerService.GetSpacialCustomer(_customerService.GetAll());
-            throw new System.NotImplementedException();
+            //throw new System.NotImplementedException();
+        }
+
+        public IEnumerable<Customer> FindCustomersByName(string framentName)
+        {
+            return _customerService.FindCustomersByName(framentName);
         }
     }
 }

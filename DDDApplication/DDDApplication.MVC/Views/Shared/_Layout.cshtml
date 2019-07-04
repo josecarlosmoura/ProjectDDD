@@ -24,6 +24,7 @@
                     <li>@Html.ActionLink("Start", "Index", "Home")</li>
                     <li>@Html.ActionLink("Customers", "Index", "Customers")</li>
                     <li>@Html.ActionLink("Products", "Index", "Products")</li>
+                    @*<li>@Html.ActionLink("Search Customer", "Search", "Customer", new { fragmentName = "" })</li>*@
                 </ul>
             </div>
         </div>
@@ -38,6 +39,7 @@
 
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
+    @Scripts.Render("~/bundles/EventsOfButtons")
     @RenderSection("scripts", required: false)
 </body>
 </html>

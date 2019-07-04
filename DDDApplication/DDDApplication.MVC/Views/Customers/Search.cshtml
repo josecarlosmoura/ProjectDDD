@@ -1,10 +1,10 @@
 ﻿@model IEnumerable<DDDApplication.MVC.ViewModels.CustomerViewModel>
 
 @{
-    ViewBag.Title = "Index";
+    ViewBag.Title = "Search";
 }
 
-<h2>Index</h2>
+<h2>Search</h2>
 
 <p>
     @Html.ActionLink("Create New", "Create")
@@ -22,9 +22,9 @@
                 <label>Nome:</label>
             </div>
             <div class="col-md-8">
-                <input type="text" id="customerName" name="name" class="form-control" />
+                <input type="text" id="customerName" name="FA" class="form-control" />
             </div>
-            <input type="button" id="btnSearhcustomerName" value="Search" class="btn btn-primary" />
+            <input type="button" id="btnSearhcustomerName" value="Buscar" class="btn btn-primary" />
         </div>
     </div>
     <div class="col-md-3"></div>
@@ -72,4 +72,8 @@
         }
 
     </table>
+</div>
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
 </div>

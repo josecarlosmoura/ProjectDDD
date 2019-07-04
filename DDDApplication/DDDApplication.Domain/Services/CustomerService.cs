@@ -19,5 +19,10 @@ namespace DDDApplication.Domain.Services
         {
             return customers.Where(c => c.SpacialCustomer(c));
         }
+
+        public IEnumerable<Customer> FindCustomersByName(string fragmentOfName)
+        {
+            return _customerRepository.FindCustomerByName(fragmentOfName);
+        }
     }
 }

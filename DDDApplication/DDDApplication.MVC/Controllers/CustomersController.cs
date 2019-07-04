@@ -106,5 +106,13 @@ namespace DDDApplication.MVC.Controllers
 
             return RedirectToAction("Index");
         }
+
+        public ActionResult Search(string nameFragment)
+        {
+            var teste = _customerAppService.FindCustomersByName(nameFragment);
+            var customerViewModel = Mapper.Map<IEnumerable<Customer>, IEnumerable<CustomerViewModel>>(teste);
+
+            return View(customerViewModel);
+        }
     }
 }
